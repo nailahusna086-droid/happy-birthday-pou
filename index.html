@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You 💗</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+    <div class="stars"></div>
+
+    <!-- HALAMAN 1 -->
+    <section class="opening" id="opening">
+
+        <div class="envelope-container">
+
+            <div class="envelope" id="envelope">
+                <div class="flap"></div>
+
+                <div class="letter-preview">
+                    💌
+                </div>
+            </div>
+
+            <h1>Someone has a little surprise for you...</h1>
+
+            <p>Tap the envelope 💗</p>
+
+            <button onclick="openEnvelope()">
+                Open 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HALAMAN 2 -->
+    <section class="birthday hidden" id="birthday">
+
+        <div class="content">
+
+            <p class="small-text">
+                Today is a little different...
+            </p>
+
+            <h1>
+                HAPPY<br>
+                BIRTHDAY 🎂
+            </h1>
+
+            <h2 id="name">
+                Someone Special
+            </h2>
+
+            <p>
+                Because today, the world got a little brighter
+                because you were born. ✨
+            </p>
+
+            <button onclick="showLetter()">
+                There's something for you 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HALAMAN 3 -->
+    <section class="letter-section hidden" id="letterSection">
+
+        <div class="letter">
+
+            <p class="date">
+                A little letter for you ♡
+            </p>
+
+            <h2>Happy Birthday! 🎂</h2>
+
+            <p>
+                Selamat ulang tahun! 🥳
+            </p>
+
+            <p>
+                Di hari spesial ini, aku cuma mau bilang
+                semoga semua hal baik selalu menemukan jalan
+                menuju kamu.
+            </p>
+
+            <p>
+                Semoga di umur yang baru ini kamu selalu
+                diberi kesehatan, kebahagiaan, dan kekuatan
+                buat menghadapi apa pun yang datang.
+            </p>
+
+            <p>
+                Semoga hal-hal yang selama ini kamu doakan
+                perlahan berubah menjadi kenyataan.
+                Semoga langkah kamu selalu dipertemukan
+                dengan orang-orang baik dan kesempatan
+                yang baik juga.
+            </p>
+
+            <p>
+                And please remember...
+                you deserve good things too. 🤍
+            </p>
+
+            <p>
+                Thank you for being you.
+                Jangan berubah jadi orang lain hanya untuk
+                memenuhi ekspektasi dunia.
+            </p>
+
+            <p class="ending">
+                Once again,<br>
+                <b>Happy Birthday! 🎂💗</b>
+            </p>
+
+            <button onclick="showGallery()">
+                One more thing... ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HALAMAN 4 -->
+    <section class="gallery-section hidden" id="gallerySection">
+
+        <h1>Little Memories 📸</h1>
+
+        <p>
+            Some moments are worth keeping.
+        </p>
+
+        <div class="gallery">
+
+            <div class="photo">
+                <img src="images/foto1.jpg">
+            </div>
+
+            <div class="photo">
+                <img src="images/foto2.jpg">
+            </div>
+
+            <div class="photo">
+                <img src="images/foto3.jpg">
+            </div>
+
+        </div>
+
+        <button onclick="surprise()">
+            Last surprise 🎁
+        </button>
+
+    </section>
+
+
+    <!-- HALAMAN 5 -->
+    <section class="final hidden" id="final">
+
+        <div class="final-content">
+
+            <div class="gift">
+                🎁
+            </div>
+
+            <h1>
+                Make a wish ✨
+            </h1>
+
+            <p>
+                Close your eyes for a second...
+            </p>
+
+            <p>
+                Think about something you really want.
+            </p>
+
+            <button onclick="confetti()">
+                ✨ Make a Wish ✨
+            </button>
+
+            <div id="finalMessage"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MUSIC -->
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
